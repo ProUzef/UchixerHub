@@ -121,7 +121,7 @@ makeToggle("Activate Script", 170, function(state)
     if state then
         local success, response = pcall(function()
             -- put github/pastefy raw link for execution
-            return game HttpGet("https://pastefy.app/c9nKUlTP/raw"))()")
+            return game HttpGet("https://pastefy.app/c9nKUlTP/raw")
         end)
         if success then
             local func, loadErr = loadstring(response)
